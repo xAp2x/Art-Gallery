@@ -230,7 +230,7 @@ body { /*Main hannibal colors are Scarlet: rgb(167, 43, 42), Navy: rgb(0, 40, 85
 }
 .profile-link .card:hover {
     transform: scale(1.05); /* Slightly enlarge card on hover */
-    box-shadow: 0px 4px 15px rgba(200, 50, 50, 0.3); /* Add shadow */
+    box-shadow: 0px 4px 15px rgba(200, 50, 50, 0.5); /* Add shadow */
 }
 .col-lg-3, .col-md-4, .col-sm-6, .col-12 {/* Ensure the grid columns allow overlapping */
     position: relative;
