@@ -1,0 +1,363 @@
+:root {
+    /* Light Mode Variables */
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 40, 85);
+    --navbar-bg: rgb(0, 40, 85);
+    --accent-color: rgb(167, 43, 42);
+    --button-border: rgb(0, 40, 85);
+    --button-text: rgb(0, 40, 85);
+    --button-bg: rgb(200, 200, 200);
+    --card-bg: rgb(255, 255, 255);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Dark Mode Variables */
+      --bg-color: rgb(20, 20, 20);
+      --text-color: rgb(255, 255, 255);
+      --navbar-bg: rgb(0, 40, 85);
+      --accent-color: rgb(200, 50, 50);
+      --button-border: rgb(255, 255, 255);
+      --button-text: rgb(255, 255, 255);
+      --button-bg: rgb(50, 50, 50);
+      --card-bg: rgb(0, 40, 85);
+    }
+  }  
+
+  body.light-mode {
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 40, 85);
+    --navbar-bg: rgb(0, 40, 85);
+    --accent-color: rgb(167, 43, 42);
+    --button-border: rgb(0, 40, 85);
+    --button-text: rgb(0, 40, 85);
+    --button-bg: rgb(255, 255, 255);
+    --card-bg: rgb(255, 255, 255);
+  }
+  
+  body.dark-mode {
+    --bg-color: rgb(20, 20, 20);
+    --text-color: rgb(255, 255, 255);
+    --navbar-bg: rgb(0, 40, 85);
+    --accent-color: rgb(200, 50, 50);
+    --button-border: rgb(255, 255, 255);
+    --button-text: rgb(255, 255, 255);
+    --button-bg: rgb(50, 50, 50);
+    --card-bg: rgb(0, 40, 85);
+  }
+body { /*Main hannibal colors are Scarlet: rgb(167, 43, 42), Navy: rgb(0, 40, 85)*/
+    padding: 0;
+    padding-top: 75px; /* Adjust this value if your navbar height changes */
+    margin: 0;
+    background: var(--bg-color); /*main background color*/
+    color: var(--text-color); 
+}
+.navbar {
+    position: fixed; /* Keep navbar at the top */
+    height: 75px; /* Set fixed navbar height */
+    top: 0;
+    width: 100%;
+    background: var(--navbar-bg); /* Navbar main background color */
+    z-index: 1000; /* Ensures navbar stays above other content */
+}
+.navbar-nav {
+    display: flex;
+    justify-content: right; /* Centers the nav links */
+    width: 100%; /* Makes sure the navbar takes full width */
+    background-color: var(--navbar-bg); /* Adjust color as needed */
+}
+.navbar-nav .nav-item {
+    width: 125px; /* Set a fixed width for each nav item */
+    text-align: center; /* Ensures text is centered */
+}
+.navbar-nav .nav-link { /*applies styles only to elements with the .nav-link class inside an element with .navbar-nav*/
+    height: 100%;
+    width: 100%; /* Ensures full width */
+    display: block; /* Makes the link take full space */
+    padding: 0 1rem; /* Keeps text aligned */
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centers text */
+    line-height: 75px; /* Matches navbar height for vertical centering */
+    color: rgb(255, 255, 255); /* Sets text color */
+}
+.navbar-nav .nav-link.active {
+    background-color: var(--accent-color); /* Change background for active link */
+    color: rgb(255, 255, 255); /* Always white so doesn't need var() */
+}
+.navbar-nav .nav-link:hover {
+    background-color: rgba(167, 42, 42, 0.8); /* Hover background */
+    color: rgb(255, 255, 255); /* Ensures text stays white */
+}
+.navbar-brand {
+    color: rgb(255, 255, 255); /*always white*/
+    cursor: pointer;
+}
+.navbar-brand:hover {
+    color: var(--accent-color);
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.header {
+    min-height: 100vh; /* optional if you want a minimum */
+    margin-top: 2rem; /* Add margin to account for fixed navbar */
+    display: flex;
+    flex-direction: column; /* stacks children vertically */
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem; /* Gives some breathing room before the footer */ /*2rem is a CSS unit of measurement that stands for "2 times the root element's font size*/
+}
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+	color: var(--text-color);
+}
+.description p {
+	color: var(--accent-color);
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+.description button { /*dont think this is being used*/
+    border: 6px solid rgb(200, 50, 50); /*button border color*/
+    background: rgba(255, 255, 255, 0); /*button bg color*/
+    border-radius: 0;
+    color: rgb(200, 50, 50); /*button word color*/
+}
+.description button:hover {
+	background: rgba(255, 255, 255, 0);
+    border: 6px solid rgb(100, 50, 50);
+	color: rgb(100, 50, 50)
+}
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+.feature-title {
+	color: var(--text-color);
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.features .form-control,
+.features input {
+	border-radius: 0;
+}
+.features, .btn {
+    background: rgba(255, 255, 255, 0);
+    border: 6px solid rgb(200, 50, 50);
+    color: rgb(200, 50, 50);
+	border-radius: 0;
+    margin-top: 20px;
+}
+.btn:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 6px solid rgb(100, 50, 50);
+	color: rgb(100, 50, 50);
+}
+.background {
+	background: var(--bg-color);
+	padding: 4em 0;
+}
+.team {
+	color: var(--button-border);
+	padding: 0 180px;
+}
+.team .card-columns {
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+}
+.team .card {
+	background-color: var(--button-bg);
+	border: none;
+}
+.team .card-title {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.card {
+    height: 100%; /* Makes all cards the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--card-bg); /* Use variable for background */
+    color: var(--text-color);         /* Use variable for text */
+    border: 1px solid var(--button-border); /* Optional: if you want a border */
+}
+.card-img-top {
+    width: 150px; /* Set a fixed size for images */
+    height: 150px;
+    object-fit: cover; /* Ensures images don’t get distorted */
+    margin: 15px auto 0 auto; /* Centers the image */
+}
+.card-body {
+    flex-grow: 1; /* Ensures all card bodies expand to fill space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+    align-items: center; /* Centers text horizontally */
+}
+.card-body h4,
+.card-body p {
+    color: var(--text-color); /* Ensure card text uses the variable */
+}
+.profile-link {
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    color: inherit;
+}
+.profile-link .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Ensure z-index works */
+    z-index: 1; /* Default layer */
+}
+.profile-link:hover {
+    text-decoration: none; /* Remove default link styling */
+    color: inherit; /* Ensures hover doesn't change text color */
+    z-index: 1000; /* Bring hovered card to the top */
+}
+.profile-link .card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+    box-shadow: 0px 4px 15px rgba(200, 50, 50, 0.3); /* Add shadow */
+}
+.col-lg-3, .col-md-4, .col-sm-6, .col-12 {/* Ensure the grid columns allow overlapping */
+    position: relative;
+    overflow: visible;
+}
+.page-footer {
+    text-decoration: none; /* Remove default link styling */
+    background-color: rgb(0, 40, 85);
+    color: rgb(255, 255, 255);
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: rgb(255, 255, 255);
+    padding: 40px 0;
+}
+.page-footer .row {
+    display: flex;
+    justify-content: space-around; /* Ensures equal spacing */
+    flex-wrap: wrap; /* Makes it responsive */
+}
+.page-footer .col-lg-4 {
+    text-align: center;
+}
+.page-footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.page-footer a:hover {
+    text-decoration: underline;
+}
+.carousel-item img {
+    height: 500px;
+    width: auto !important;  /* Overrides the Bootstrap w-100 */
+    object-fit: cover;
+    margin: 0 auto;          /* Centers the image horizontally */
+}
+div.gallery {
+    border: 1px solid rgb(0, 75, 161); /*gallery images border*/
+  }
+  div.gallery:hover {
+    border: 1px solid rgb(0, 40, 85); /*gallery images border hovered*/
+  }
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  } 
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  } 
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+@media (max-width: 768px) {
+    .navbar {
+        height: auto; /* Allow it to expand properly */
+        padding: 10px 0;
+    }
+    .navbar-nav {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center links */
+        width: 100%;
+    }
+    .navbar-nav .nav-item {
+        width: 100%; /* Make each nav item full width */
+        text-align: center; /* Center the text */
+        padding: 10px 0; /* Add spacing for touch accessibility */
+    }
+    .navbar-nav .nav-link {
+        line-height: normal; /* Prevents spacing issues */
+        padding: 12px 0; /* Adds space for better tapping */
+    }
+    .navbar-toggler {
+        border: 2px solid rgb(255, 255, 255); /* Makes toggle button visible */
+    }
+    .navbar-toggler-icon {
+        background-color: rgb(255, 255, 255); /* Ensures visibility */
+    }
+    .description {
+        width: 90%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .description h1 {
+        font-size: 1.8rem; /* Reduce header text size */
+    }
+    .description p {
+        font-size: 1.1rem;
+    }
+    .description button {
+        font-size: 1rem; /* Adjust button size */
+        padding: 8px 16px;
+    }
+    .carousel-item img {
+        height: 250px; /* Reduce height for smaller screens */
+        object-fit: cover;
+    }
+    .page-footer {
+        padding: 30px 0 15px;
+    }
+    .page-footer .container {
+        text-align: center;
+    }
+    .footer-copyright {
+        font-size: 0.9rem;
+        padding: 20px 0;
+    }
+}
