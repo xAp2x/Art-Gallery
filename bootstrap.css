@@ -64,7 +64,7 @@ body {
     display: flex;
     justify-content: right; /* Centers the nav links */
     width: 100%; /* Makes sure the navbar takes full width */
-    background-color: var(--navbar-bg); /* Adjust color as needed */
+    background-color: var(--navbar-bg); /* Adjust color up top */
 }
 .navbar-nav .nav-item {
     width: 125px; /* Sets a fixed width for each nav item */
@@ -81,7 +81,7 @@ body {
     color: rgb(255, 255, 255); /* Sets text color for navbar */
 }
 .navbar-nav .nav-link.active {
-    background-color: var(--accent-color); /* Change background for active link */
+    background-color: var(--accent-color); /* Changes background for active link */
     color: rgb(255, 255, 255); /* Always white so doesn't need var() */
 }
 .navbar-nav .nav-link:hover {
