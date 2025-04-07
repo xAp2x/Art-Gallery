@@ -1,18 +1,18 @@
 :root {
-    /* Main Light Mode Variables */
+    /* Default Light Mode Variables */
     --bg-color: rgb(200, 200, 200);
     --text-color: rgb(0, 40, 85);
     --navbar-bg: rgb(0, 40, 85);
     --accent-color: rgb(167, 43, 42);
     --button-border: rgb(0, 40, 85);
     --button-text: rgb(0, 40, 85);
-    --button-bg: rgb(200, 200, 200);
+    --button-bg: rgb(255, 255, 255);
     --card-bg: rgb(255, 255, 255);
   }
   
   @media (prefers-color-scheme: dark) {
     :root {
-      /* Main Dark Mode Variables */
+      /* Default Dark Mode Variables */
       --bg-color: rgb(20, 20, 20);
       --text-color: rgb(255, 255, 255);
       --navbar-bg: rgb(0, 40, 85);
@@ -25,7 +25,7 @@
   }  
 
   body.light-mode {
-    --bg-color: rgb(255, 255, 255);
+    --bg-color: rgb(200, 200, 200);
     --text-color: rgb(0, 40, 85);
     --navbar-bg: rgb(0, 40, 85);
     --accent-color: rgb(167, 43, 42);
