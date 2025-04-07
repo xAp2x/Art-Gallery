@@ -1,6 +1,6 @@
 :root {
-    /* Light Mode Variables */
-    --bg-color: rgb(255, 255, 255);
+    /* Main Light Mode Variables */
+    --bg-color: rgb(200, 200, 200);
     --text-color: rgb(0, 40, 85);
     --navbar-bg: rgb(0, 40, 85);
     --accent-color: rgb(167, 43, 42);
@@ -12,7 +12,7 @@
   
   @media (prefers-color-scheme: dark) {
     :root {
-      /* Dark Mode Variables */
+      /* Main Dark Mode Variables */
       --bg-color: rgb(20, 20, 20);
       --text-color: rgb(255, 255, 255);
       --navbar-bg: rgb(0, 40, 85);
