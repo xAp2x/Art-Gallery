@@ -8,9 +8,8 @@
     --button-text: rgb(0, 40, 85);
     /*--button-bg: rgb(255, 255, 255); (not being used)*/
     --card-bg: rgb(255, 255, 255);
-  }
-  
-  @media (prefers-color-scheme: dark) {
+}
+@media (prefers-color-scheme: dark) {
     :root {
       /* Default Dark Mode Variables */
       --bg-color: rgb(20, 20, 20);
@@ -22,9 +21,8 @@
       /*--button-bg: rgb(50, 50, 50); (not being used)*/ 
       --card-bg: rgb(0, 40, 85);
     }
-  }  
-
-  body.light-mode {
+}  
+body.light-mode {
     --bg-color: rgb(240, 240, 240);
     --text-color: rgb(0, 40, 85);
     --navbar-bg: rgb(0, 40, 85);
@@ -33,9 +31,8 @@
     --button-text: rgb(0, 40, 85);
     /*--button-bg: rgb(255, 255, 255); (not being used)*/
     --card-bg: rgb(255, 255, 255);
-  }
-  
-  body.dark-mode {
+}
+body.dark-mode {
     --bg-color: rgb(20, 20, 20);
     --text-color: rgb(255, 255, 255);
     --navbar-bg: rgb(0, 40, 85);
@@ -44,7 +41,7 @@
     --button-text: rgb(255, 255, 255);
     /*--button-bg: rgb(50, 50, 50); (not being used)*/
     --card-bg: rgb(0, 40, 85);
-  }
+}
 body { 
     padding: 0;
     padding-top: 75px; /* Adjust this for changeing the navbar height  */
