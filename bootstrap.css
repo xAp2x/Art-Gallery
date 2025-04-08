@@ -139,7 +139,7 @@ body {
 	position: relative;
     background:rgba(255, 255, 255, 0);
     border: 5px solid rgb(200, 50, 50);
-    color:rgb(0, 40, 85);
+    color: var(--text-color);
 }
 .feature-title {
 	color: var(--text-color);
