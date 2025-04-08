@@ -133,10 +133,13 @@ body {
     border: 6px solid rgb(100, 50, 50);
 	color: rgb(100, 50, 50)
 }
-.features {
+.features { /* Features is only for the container(s) (maybe I'll add more containers later) in About page*/
 	margin: 4em auto;
 	padding: 1em;
 	position: relative;
+    background:rgba(255, 255, 255, 0);
+    border: 5px solid rgb(200, 50, 50);
+    color:rgb(0, 40, 85);
 }
 .feature-title {
 	color: var(--text-color);
@@ -149,7 +152,7 @@ body {
 .features input {
 	border-radius: 0;
 }
-.features, .btn {
+.btn {
     background: rgba(255, 255, 255, 0);
     border: 6px solid rgb(200, 50, 50);
     color: rgb(200, 50, 50);
