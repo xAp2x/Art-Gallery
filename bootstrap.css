@@ -306,22 +306,28 @@ div.desc { /*gallery images spacing things apparently*/
 .responsive {
     padding: 1em;
     float: left;
-    width: 24.99999%; /*makes it so that theres 4 images per row as default (with the other modifiers below its only on a window size with 1001px or more)*/
+    width: 24.99999%; /*makes it so that theres 4 images per row as default (with the other modifiers below its only on a window width with 1001px or more)*/
 } 
 @media only screen and (max-width: 1000px) { 
     .responsive {
-      width: 33.33332%; /*makes it so that theres 3 images on a window size between 1000-751px*/
+      width: 33.33332%; /*makes it so that theres 3 images on a window width between 1000-751px*/
     }
 }
 @media only screen and (max-width: 750px) {
     .responsive {
-      width: 49.99999%; /*makes it so that theres 2 images on a window size between 750-501px*/
+      width: 49.99999%; /*makes it so that theres 2 images on a window width between 750-501px*/
     }
 } 
   @media only screen and (max-width: 500px) { 
-    .responsive { /*makes it so that theres 1 image on a window size with 500px or less*/
+    .responsive { /*makes it so that theres 1 image on a window width with 500px or less*/
       width: 100%;
     }
+}
+@media only screen and (max-width: 500px) { /*Changes the left and right padding for any container elements when screen is skinnier than 502px*/ 
+    .container, .features, .row { 
+        padding-left: 20px; 
+        padding-right: 20px; 
+    } 
 }
 .clearfix:after {
     content: "";
@@ -355,9 +361,6 @@ div.desc { /*gallery images spacing things apparently*/
     }
     .navbar-toggler-icon {
         background-color: rgb(255, 255, 255); /* Ensures visibility */
-    }
-    .container, .content-wrapper {
-        padding: 0 15px; /* Add equal left and right space */
     }
     .description {
         width: 90%;
