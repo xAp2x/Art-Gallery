@@ -417,3 +417,10 @@ div.desc { /*gallery images spacing things apparently*/
       margin-top: 0;
     }
   }
+  .fa {
+    text-decoration: none;
+  }
+  .fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
