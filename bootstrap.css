@@ -316,7 +316,6 @@ div.desc { /*gallery images spacing things apparently*/
 @media only screen and (max-width: 750px) {
     .responsive {
       width: 49.99999%;
-      margin: 6px 0;
     }
 } 
   @media only screen and (max-width: 500px) { /*size of the gallery containers for smallest mobile screen size*/
