@@ -240,7 +240,7 @@ body {
 .profile-link:hover {
     text-decoration: none; /* Remove default link styling */
     color: inherit; /* Ensures hover doesn't change text color */
-    z-index: 1000; /* Bring hovered card to the top */
+    z-index: 500; /* Bring hovered card to the top */
 }
 .profile-link .card:hover {
     transform: scale(1.05); /* Slightly enlarge card on hover */
