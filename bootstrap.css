@@ -300,31 +300,35 @@ div.desc { /*gallery images spacing things apparently*/
     justify-content: center;
 }
 
-  * {
+* {
     box-sizing: border-box;
-  }
-  .responsive {
+}
+.responsive {
     padding: 1em;
     float: left;
     width: 24.99999%;
-  } 
-  @media only screen and (max-width: 700px) {
+} 
+@media only screen and (max-width: 1000px) { /*size of the gallery containers for second largest screen size*/
+    .responsive {
+      width: 33.33332%;
+    }
+}
+@media only screen and (max-width: 750px) {
     .responsive {
       width: 49.99999%;
       margin: 6px 0;
     }
-  } 
+} 
   @media only screen and (max-width: 500px) { /*size of the gallery containers for smallest mobile screen size*/
     .responsive {
-      float: center;
       width: 100%;
     }
-  }
-  .clearfix:after {
+}
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
 @media (max-width: 768px) {
     .navbar {
         height: auto; /* Allow it to expand properly */
