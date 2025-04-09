@@ -148,9 +148,23 @@ body {
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
-.features .form-control,
-.features input {
-	border-radius: 0;
+.feature-content {
+	display: flex;
+	align-items: flex-start;
+	gap: 2em;
+}
+.feature-left {
+	flex: 0 0 auto; /* Prevents growing */
+	text-align: center;
+}
+.feature-left img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-top: 1em;
+}
+.feature-right {
+	flex: 1;
 }
 .btn {
     background: rgba(255, 255, 255, 0);
@@ -393,7 +407,6 @@ div.desc { /*gallery images spacing things apparently*/
   }
   .container {
     border-radius: 5px;
-    background-color: none;
     padding: 20px;
   }
   .col-25 {
