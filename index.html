@@ -31,7 +31,6 @@ Other "suggestions:"
     </head>
     <body>
 		<nav class="navbar navbar-expand-md">
-			
 			<a class="navbar-brand" href="https://xap2x.github.io/Art-Gallery/">Hagerman Art Gallery</a>
 			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -56,7 +55,7 @@ Other "suggestions:"
 		<div class="d-flex justify-content-center my-3">
 			<button id="darkModeToggle" class="btn btn-outline-secondary btn-sm">Toggle Dark Mode</button>
 		</div>
-		<header class="page-header header container-fluid"> <!--Top Section under Nav bar-->
+		<header class="page-header header container-fluid"> <!-- Top Section under Nav bar -->
 			<!-- Text above the carousel -->
 			<div class="header-top text-center">
 				<h1>Welcome to Hannibal-LaGrange's Hagerman Art Gallery!</h1>
@@ -140,19 +139,16 @@ Other "suggestions:"
 		</footer>
 		<script>
 			const toggleButton = document.getElementById('darkModeToggle');
-			// Check for saved preference
-			const savedTheme = localStorage.getItem('theme');
+			const savedTheme = localStorage.getItem('theme'); // Checks for saved theme preference
 			if (savedTheme) {
 			  document.body.classList.add(savedTheme);
-			} else {
-			  // If no saved theme, use auto-detect:
+			} else { // If no saved theme, it uses auto-detect:
 			  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				document.body.classList.add('dark-mode');
 			  } else {
 				document.body.classList.add('light-mode');
 			  }
 			}
-		  
 			toggleButton.addEventListener('click', () => {
 			  if (document.body.classList.contains('dark-mode')) {
 				document.body.classList.remove('dark-mode');
