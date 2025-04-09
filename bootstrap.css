@@ -306,20 +306,20 @@ div.desc { /*gallery images spacing things apparently*/
 .responsive {
     padding: 1em;
     float: left;
-    width: 24.99999%;
+    width: 24.99999%; /*makes it so that theres 4 images per row as default (with the other modifiers below its only on a window size with 1001px or more)*/
 } 
-@media only screen and (max-width: 1000px) { /*size of the gallery containers for second largest screen size*/
+@media only screen and (max-width: 1000px) { 
     .responsive {
-      width: 33.33332%;
+      width: 33.33332%; /*makes it so that theres 3 images on a window size between 1000-751px*/
     }
 }
 @media only screen and (max-width: 750px) {
     .responsive {
-      width: 49.99999%;
+      width: 49.99999%; /*makes it so that theres 2 images on a window size between 750-501px*/
     }
 } 
-  @media only screen and (max-width: 500px) { /*size of the gallery containers for smallest mobile screen size*/
-    .responsive {
+  @media only screen and (max-width: 500px) { 
+    .responsive { /*makes it so that theres 1 image on a window size with 500px or less*/
       width: 100%;
     }
 }
