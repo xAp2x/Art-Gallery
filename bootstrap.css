@@ -154,7 +154,7 @@ body {
 	gap: 2em;
 }
 .feature-left {
-	flex: 0 0 auto; /* Prevents growing */
+	flex: 0 0 initial; /* Prevents growing but allows shrinking*/
 	text-align: center;
 }
 .feature-left img {
