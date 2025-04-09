@@ -344,7 +344,7 @@ div.desc { /*gallery images spacing things apparently*/
         padding: 12px 0; /* Adds space for better tapping */
     }
     .navbar-brand {
-        margin-left: 12px; 
+        margin-left: 25px; 
     }
     .navbar-toggler {
         border: 2px solid rgb(255, 255, 255); /* Makes toggle button visible */
