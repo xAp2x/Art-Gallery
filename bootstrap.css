@@ -150,7 +150,7 @@ body {
 }
 .feature-content {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	gap: 2em;
 }
 .feature-left {
