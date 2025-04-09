@@ -352,6 +352,9 @@ div.desc { /*gallery images spacing things apparently*/
     .navbar-toggler-icon {
         background-color: rgb(255, 255, 255); /* Ensures visibility */
     }
+    .container, .content-wrapper {
+        padding: 0 15px; /* Add equal left and right space */
+    }
     .description {
         width: 90%;
         top: 50%;
