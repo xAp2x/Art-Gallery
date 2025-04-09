@@ -314,8 +314,9 @@ div.desc { /*gallery images spacing things apparently*/
       margin: 6px 0;
     }
   } 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 500px) { /*size of the gallery containers for smallest mobile screen size*/
     .responsive {
+      float: center;
       width: 100%;
     }
   }
