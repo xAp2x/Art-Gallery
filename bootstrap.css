@@ -134,7 +134,7 @@ body {
 	color: rgb(100, 50, 50)
 }
 .features { /* Features is only for the container(s) (maybe I'll add more containers later) in About page*/
-	margin: 4em auto;
+	margin: 2em auto;
 	padding: 1em;
 	position: relative;
     background:rgba(255, 255, 255, 0);
