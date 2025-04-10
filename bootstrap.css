@@ -299,7 +299,6 @@ div.desc { /*gallery images spacing things apparently*/
     align-items: center;
     justify-content: center;
 }
-
 * {
     box-sizing: border-box;
 }
@@ -329,7 +328,6 @@ div.desc { /*gallery images spacing things apparently*/
         padding-right: 20px; 
     } 
 }
-
 .clearfix:after {
     content: "";
     display: table;
