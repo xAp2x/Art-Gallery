@@ -134,7 +134,7 @@ Other ideas for another time:
 			const savedTheme = localStorage.getItem('theme'); 
 			if (savedTheme) {
 			  document.body.classList.add(savedTheme);
-			} else { // If no saved theme, it uses auto-detect:
+			} else { /* If no saved theme, it uses auto-detect: */
 			  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				document.body.classList.add('dark-mode');
 			  } else {
