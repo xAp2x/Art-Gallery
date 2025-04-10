@@ -6,7 +6,7 @@
     --accent-color: rgb(167, 43, 42);
     --button-border: rgb(0, 40, 85);
     --button-text: rgb(0, 40, 85);
-    /*--button-bg: rgb(255, 255, 255); (not being used)*/
+    /* --button-bg: rgb(255, 255, 255); (not being used) */
     --card-bg: rgb(255, 255, 255);
 }
 @media (prefers-color-scheme: dark) {
@@ -18,35 +18,35 @@
       --accent-color: rgb(200, 50, 50);
       --button-border: rgb(255, 255, 255);
       --button-text: rgb(255, 255, 255);
-      /*--button-bg: rgb(50, 50, 50); (not being used)*/ 
+      /* --button-bg: rgb(50, 50, 50); (not being used) */ 
       --card-bg: rgb(0, 40, 85);
     }
 }  
-body.light-mode {
+body.light-mode { /* Used to remember what mode it was last time on the website*/
     --bg-color: rgb(240, 240, 240);
     --text-color: rgb(0, 40, 85);
     --navbar-bg: rgb(0, 40, 85);
     --accent-color: rgb(167, 43, 42);
     --button-border: rgb(0, 40, 85);
     --button-text: rgb(0, 40, 85);
-    /*--button-bg: rgb(255, 255, 255); (not being used)*/
+    /* --button-bg: rgb(255, 255, 255); (not being used) */
     --card-bg: rgb(255, 255, 255);
 }
-body.dark-mode {
+body.dark-mode { /* Used to remember what mode it was last time on the website*/
     --bg-color: rgb(20, 20, 20);
     --text-color: rgb(255, 255, 255);
     --navbar-bg: rgb(0, 40, 85);
     --accent-color: rgb(200, 50, 50);
     --button-border: rgb(255, 255, 255);
     --button-text: rgb(255, 255, 255);
-    /*--button-bg: rgb(50, 50, 50); (not being used)*/
+    /* --button-bg: rgb(50, 50, 50); (not being used) */
     --card-bg: rgb(0, 40, 85);
 }
 body { 
     padding: 0;
     padding-top: 75px; /* Adjust this for changeing the navbar height  */
     margin: 0;
-    background: var(--bg-color); /*main background color*/
+    background: var(--bg-color); /* main background color */
     color: var(--text-color); 
 }
 .navbar {
@@ -86,7 +86,7 @@ body {
     color: rgb(255, 255, 255); /* Makes sure text stays white */
 }
 .navbar-brand {
-    color: rgb(255, 255, 255); /* Another thing to ensure always stays white */
+    color: rgb(255, 255, 255); /* Another thing to ensure always stays white, but for the left navbar title*/
     cursor: pointer;
 }
 .navbar-brand:hover {
@@ -97,7 +97,7 @@ body {
 }
 .header {
     display: flex;
-    flex-direction: column; /* stacks the children vertically */
+    flex-direction: column; /* forces the children to stack vertically */
     align-items: center;
     justify-content: center;
     background-size: cover;
@@ -122,18 +122,18 @@ body {
 	font-size: 1.3rem;
 	line-height: 1.5;
 }
-.description button { /*dont think this is being used*/
-    border: 6px solid rgb(200, 50, 50); /*button border color*/
-    background: rgba(255, 255, 255, 0); /*button bg color*/
+.description button { /* currently isnt being used */
+    border: 6px solid rgb(200, 50, 50); /* button border color */
+    background: rgba(255, 255, 255, 0); /* button bg color */
     border-radius: 0;
-    color: rgb(200, 50, 50); /*button word color*/
+    color: rgb(200, 50, 50); /* button word color*/
 }
 .description button:hover {
 	background: rgba(255, 255, 255, 0);
     border: 6px solid rgb(100, 50, 50);
 	color: rgb(100, 50, 50)
 }
-.features { /* Features is only for the containers in About and Events page*/
+.features { /* Features is only for the containers in About and Events page */
 	margin: 2em auto;
 	padding: 1em;
 	position: relative;
@@ -154,7 +154,7 @@ body {
 	gap: 2em;
 }
 .feature-left {
-	flex: 0 0 initial; /* Prevents growing but allows shrinking*/
+	flex: 0 0 initial; /* Prevents growing but allows shrinking */
 	text-align: center;
 }
 .feature-left img {
@@ -204,9 +204,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--card-bg); /* Use variable for background */
-    color: var(--text-color);         /* Use variable for text */
-    border: 1px solid var(--button-border); /* Optional: if you want a border */
+    background-color: var(--card-bg); /* Uses variable for background color*/
+    color: var(--text-color);         /* Uses variable for text color */
+    border: 1px solid var(--button-border); /* If I want a border */
 }
 .card-img-top {
     width: 150px; /* Set a fixed size for images */
@@ -223,7 +223,7 @@ body {
 }
 .card-body h4,
 .card-body p {
-    color: var(--text-color); /* Ensure card text uses the variable */
+    color: var(--text-color); /* uses the variable for card text */
 }
 .profile-link {
     position: relative;
@@ -233,24 +233,24 @@ body {
 }
 .profile-link .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative; /* Ensure z-index works */
+    position: relative; /* Makes sure the z-index works */
     z-index: 1; /* Default layer */
 }
 .profile-link:hover {
-    text-decoration: none; /* Remove default link styling */
-    color: inherit; /* Ensures hover doesn't change text color */
-    z-index: 500; /* Bring hovered card to the top */
+    text-decoration: none; /* Removes default link styling */
+    color: inherit; /* Makes sure hovering doesn't change text color */
+    z-index: 500; /* Bring hovered card above the others (but keeps it below the navbar) */
 }
 .profile-link .card:hover {
     transform: scale(1.05); /* Slightly enlarge card on hover */
     box-shadow: 0px 4px 15px rgba(200, 50, 50, 0.5); /* Add shadow */
 }
-.col-lg-3, .col-md-4, .col-sm-6, .col-12 {/* Ensure the grid columns allow overlapping */
+.col-lg-3, .col-md-4, .col-sm-6, .col-12 { /* Makes the grid columns allow for overlapping */
     position: relative;
     overflow: visible;
 }
 .page-footer {
-    text-decoration: none; /* Remove default link styling */
+    text-decoration: none; /* Removes default link styling */
     background-color: rgb(0, 40, 85);
     color: rgb(255, 255, 255);
     padding: 15px 0 0;
@@ -277,9 +277,9 @@ body {
 }
 .carousel-item img {
     height: 500px;
-    width: auto !important;  /* Overrides the Bootstrap w-100 */
+    width: auto !important; /* Overrides the Bootstrap w-100 */
     object-fit: cover;
-    margin: 0 auto;          /* Centers the image horizontally */
+    margin: 0 auto; /* Centers the image horizontally */
 }
 div.gallery {
     border: 1px solid rgb(0, 75, 161); /*gallery images border*/
@@ -291,10 +291,10 @@ div.gallery img {
     width: 100%;
     height: auto;
 }
-div.desc { /*gallery images spacing things apparently*/
+div.desc { /*gallery images spacing things*/
     padding: 5px;
     text-align: center;
-    min-height: 75px; /* Adjust this value based on the longest text */
+    min-height: 75px; /* Adjust this to the longest amount of text */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,17 +354,17 @@ div.desc { /*gallery images spacing things apparently*/
         transform: translate(-50%, -50%);
     }
     .description h1 {
-        font-size: 1.8rem; /* Reduce header text size */
+        font-size: 1.8rem; /* Reduces header text size */
     }
     .description p {
         font-size: 1.1rem;
     }
     .description button {
-        font-size: 1rem; /* Adjust button size */
+        font-size: 1rem; /* Adjusts button text size */
         padding: 8px 16px;
     }
     .carousel-item img {
-        height: 250px; /* Reduce height for smaller screens */
+        height: 250px; /* Reduces height for smaller screens */
         object-fit: cover;
     }
     .page-footer {
@@ -384,26 +384,26 @@ div.desc { /*gallery images spacing things apparently*/
         padding-right: 20px; 
     } 
 }
-.clearfix:after {
+.clearfix:after { /* good for legacy support and makes sure the layout is consistent*/
     content: "";
     display: table;
     clear: both;
 }
 * {
     box-sizing: border-box;
-  }
+}
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-  }
-  label {
+}
+label { /* Form Row Names */
     padding: 12px 12px 12px 0;
     display: inline-block;
-  }
-  input[type=submit] {
+}
+input[type=submit] { /* About Page submit button*/
     background-color: rgb(200, 50, 50);
     color: white;
     padding: 12px 20px;
@@ -411,44 +411,44 @@ div.desc { /*gallery images spacing things apparently*/
     border-radius: 4px;
     cursor: pointer;
     float: right;
-  }
-  input[type=submit]:hover {
+}
+input[type=submit]:hover { /* hover for submit button */
     background-color: rgb(100, 50, 50);
-  }
-  .container {
+}
+.container {
     border-radius: 5px;
     padding: 20px;
-  }
-  .col-25 {
+}
+.col-25 { /* left side of form for Label */
     float: left;
     width: 25%;
     margin-top: 6px;
-  }
-  .col-75 {
+}
+  .col-75 { /* right side of form for input fields */
     float: left;
     width: 75%;
     margin-top: 6px;
-  }
-  .col-100 {
+}
+.col-100 { /* For the submit button */
     float: left;
     width: 100%;
     margin-top: 6px;
-  }
-  .row:after {/* Clear floats after the columns */
+}
+.row:after { /* Clear floats after the columns */
     content: "";
     display: table;
     clear: both;
-  }
-  @media screen and (max-width: 600px) {/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+}
+@media screen and (max-width: 600px) { /* Responsive layout - when the screen is less than 600px wide, it makes the two columns stack on top of each other instead of next to each other */
     .col-25, .col-75, .col-100, .input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
-  .fa {
+.fa {
     text-decoration: none;
-  }
-  .fa:hover {
+}
+.fa:hover {
     opacity: 0.7;
     text-decoration: none;
 }
