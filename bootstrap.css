@@ -329,6 +329,12 @@ div.desc { /*gallery images spacing things apparently*/
         padding-right: 20px; 
     } 
 }
+@media only screen and (max-width: 500px) { 
+    .container, .container-fluid, .features { 
+        padding-left: 20px !important; 
+        padding-right: 20px !important; 
+    } 
+}
 .clearfix:after {
     content: "";
     display: table;
