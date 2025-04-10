@@ -130,7 +130,8 @@ Other ideas for another time:
 		</footer>
 		<script>
 			const toggleButton = document.getElementById('darkModeToggle');
-			const savedTheme = localStorage.getItem('theme'); // Checks for saved theme preference
+			/* Checks for saved preference */
+			const savedTheme = localStorage.getItem('theme'); 
 			if (savedTheme) {
 			  document.body.classList.add(savedTheme);
 			} else { // If no saved theme, it uses auto-detect:

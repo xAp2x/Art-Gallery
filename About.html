@@ -123,19 +123,17 @@
 		</footer>
 		<script>
 			const toggleButton = document.getElementById('darkModeToggle');
-			// Checks for saved preference
+			/* Checks for saved preference */
 			const savedTheme = localStorage.getItem('theme');
 			if (savedTheme) {
 			  document.body.classList.add(savedTheme);
-			} else {
-			  // If no saved theme, it uses auto-detect:
+			} else { /* If no saved theme, it uses auto-detect: */
 			  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 				document.body.classList.add('dark-mode');
 			  } else {
 				document.body.classList.add('light-mode');
 			  }
 			}
-		  
 			toggleButton.addEventListener('click', () => {
 			  if (document.body.classList.contains('dark-mode')) {
 				document.body.classList.remove('dark-mode');
