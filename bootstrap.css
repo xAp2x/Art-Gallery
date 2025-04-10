@@ -430,6 +430,11 @@ div.desc { /*gallery images spacing things apparently*/
     width: 75%;
     margin-top: 6px;
   }
+  .col-100 {
+    float: left;
+    width: 100%;
+    margin-top: 6px;
+  }
   .row:after {/* Clear floats after the columns */
     content: "";
     display: table;
