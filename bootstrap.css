@@ -317,7 +317,7 @@ div.desc { /*gallery images spacing things apparently*/
       width: 49.99999%; /*makes it so that theres 2 images on a window width between 750-501px*/
     }
 } 
-  @media only screen and (max-width: 500px) { 
+@media only screen and (max-width: 500px) { 
     .responsive { /*makes it so that theres 1 image on a window width with 500px or less*/
       width: 100%;
     }
