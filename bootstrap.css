@@ -445,7 +445,7 @@ input[type=submit]:hover { /* hover for submit button */
       margin-top: 0;
     }
   }
-.fa {
+.fa { /* Social Icons in Footer */
     text-decoration: none;
 }
 .fa:hover {
