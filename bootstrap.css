@@ -320,19 +320,6 @@ div.desc { /*gallery images spacing things apparently*/
     .responsive { /*makes it so that theres 1 image on a window width with 500px or less*/
       width: 100%;
     }
-}
-@media only screen and (max-width: 500px) { /*Changes the left and right padding for any container elements when screen is skinnier than 502px*/ 
-    .container, .features, .row { 
-        padding-left: 20px; 
-        padding-right: 20px; 
-    } 
-}
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-@media (max-width: 768px) {
     .navbar {
         height: auto; /* Allow it to expand properly */
         padding: 10px 0;
@@ -358,7 +345,7 @@ div.desc { /*gallery images spacing things apparently*/
         border: 2px solid rgb(255, 255, 255); /* Makes toggle button visible */
     }
     .navbar-toggler-icon {
-        background-color: rgb(255, 255, 255); /* Ensures visibility */
+        background-color: rgba(255, 255, 255, 0); /* Ensures visibility */
     }
     .description {
         width: 90%;
@@ -387,8 +374,19 @@ div.desc { /*gallery images spacing things apparently*/
     }
     .footer-copyright {
         font-size: 0.9rem;
-        padding: 20px 0;
+        padding: 10px 0;
     }
+}
+@media only screen and (max-width: 500px) { /*Changes the left and right padding for any container elements when screen is skinnier than 502px*/ 
+    .container, .features, .row { 
+        padding-left: 20px; 
+        padding-right: 20px; 
+    } 
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 * {
     box-sizing: border-box;
