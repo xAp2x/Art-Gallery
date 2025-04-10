@@ -335,17 +335,17 @@ div.desc { /*gallery images spacing things apparently*/
         padding: 10px 0; /* Add spacing for touch accessibility */
     }
     .navbar-nav .nav-link {
-        line-height: normal; /* Prevents spacing issues */
+        line-height: normal; /* spacing */
         padding: 12px 0; /* Adds space for better tapping */
     }
     .navbar-brand {
         margin-left: 25px; 
     }
     .navbar-toggler {
-        border: 2px solid rgb(255, 255, 255); /* Makes toggle button visible */
+        border: 2px solid rgb(0, 25, 50); /* Makes toggle button (Hamburger Menu Icon) have a border */
     }
     .navbar-toggler-icon {
-        background-color: rgba(255, 255, 255, 0); /* Ensures visibility */
+        background-color: rgba(255, 255, 255, 0); /* Background color for the toggle button */
     }
     .description {
         width: 90%;
